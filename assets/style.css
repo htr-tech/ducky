@@ -1,0 +1,102 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:900,300';
+
+html, body {
+  margin: 0; padding: 0;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  background: #333333;
+  height: 100%; width: 100%;
+}
+
+.inout-wrapper {
+  position: relative;
+  width: 100%; height: 90%;
+}
+.inout {
+  background-color: #181818;;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 3px;
+  color: #0ec4bb;
+  display: inline-block;
+  resize: none;
+  margin: 16px; padding: 2px;
+  width: calc(50% - calc(32px + 2px + 6px));
+  height: calc(100% - 50px - 32px);
+}
+.inout .duckyscript {
+  float: left;
+}
+.inout .arduino {
+  float: right;
+}
+
+.console-wrapper {
+  position: relative;
+  width: 100%; height: 10%;
+  top: -50px;
+}
+.console {
+  background-color: #181818;;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 3px;
+  color: #c6c6c6;
+  display: inline-block;
+  resize: none;
+  margin: 16px; padding: 2px;
+  width: calc(100% - calc(32px + 6px));
+}
+
+menu {
+  position: relative;
+  top: 0;
+  background: #b8b8b8;
+  margin: 0; padding: 0;
+  width: 100%; height: 48px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  overflow: hidden;
+  
+}
+
+menu a {
+  display: block;
+  padding: 0 16px;
+  height: 48px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 48px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.custom-button,
+.custom-button:visited {
+      display: inline-block;
+	  padding: 2px 10px;
+}
+.custom-button:hover {
+  background: #eeeeee;
+  color: #00d681;
+  box-shadow: 0 2px 0 0 #333333;
+  cursor: pointer;
+}
+
+menu .center {float: center;}
+menu .left {float: left;}
+menu .right {float: right;}
+
+input[type=text], select {
+  padding: 8px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.reload {
+  font-family: Lucida Sans Unicode
+}
+

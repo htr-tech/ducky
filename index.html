@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Dckuino.js - Ducky Converter</title>
+<link rel="shortcut icon" href="assets/ico.png" type="image/png">
+<link rel="icon" href="assets/ico.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<script src="assets/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+
+<menu>
+<a class="left compile-but custom-button">Generate Script</a>
+<a class="custom-button" onclick="clipboard()">Copy</a>&nbsp;&nbsp;&nbsp;
+<input size="10" type="text" placeholder="Payload Name" id="payloadName"/>
+<a class="custom-button" onclick="onclick=saveTextAsFile(outputBox.value,payloadName.value)">Download</a>
+<a class="right custom-button" href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank">Ducky Payloads</a>
+<a class="right custom-button" href="duck2py.html">Ducky2Python</a>
+<a class="right custom-button" href="digispark.html">Ducky2Digispark</a>
+<a class="right custom-button" onclick="location.reload()"><span class=reload>&#x21bb;</span></a>
+</menu>
+
+<div class="inout-wrapper">
+<textarea class="inout duckyscript" placeholder="Enter DuckyScript to convert..."></textarea>
+<textarea id="outputBox" class="inout arduino" placeholder="Converted Arduino script will appear here..." readonly></textarea>
+</div>
+
+<div class="console-wrapper">
+<textarea class="console" readonly></textarea>
+</div>
+
+<script src="assets/Dckuino.js"></script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Convert DuckyScript to Python</title>
+<link rel="shortcut icon" href="assets/ico.png" type="image/png">
+<link rel="icon" href="assets/ico.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<script src="assets/main.js"></script>
+<script src="assets/ducky2python.js"></script>
+</head>
+<body>
+
+<menu>
+<a class="left compile-but custom-button" onclick="if(document.getElementById('inputBox').value != ''){convert()}">Generate Script</a>
+<a class="custom-button" onclick="clipboard()">Copy</a>&nbsp;&nbsp;&nbsp;
+<input size="10" type="text" placeholder="Payload Name" id="payloadName"/>
+<a class="custom-button" onclick="onclick=saveTextAsFile(outputBox.value,payloadName.value)">Download</a>
+<a class="right custom-button" href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank">Ducky Payloads</a>
+<a class="right custom-button" href="digispark.html">Ducky2Digispark</a>
+<a class="right custom-button" href="index.html">Dckuino.js</a>
+<a class="right custom-button" onclick="location.reload()"><span class=reload>&#x21bb;</span></a>
+</menu>
+
+<div class = "inout-wrapper">
+<textarea class="inout duckyscript" id = "inputBox" placeholder="Enter DuckyScript to convert..."></textarea>
+<textarea class="inout arduino" id = "outputBox" placeholder="Converted Python script will appear here..." readonly></textarea>
+</div>
+
+</body>
+</html>
