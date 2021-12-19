@@ -6,5 +6,5 @@
 #### https://github.com/CedArctic/digiQuack
 #### https://github.com/CedArctic/ducky2python
 
-### Live version: [Click Here](https://tahmidrayat.github.io/ducky/)
+### Live version: [Click Here](https://htr-tech.github.io/ducky/)
 
