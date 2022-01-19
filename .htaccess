@@ -1,3 +1,11 @@
 RewriteEngine On
+Options +SymLinksIfOwnerMatch
+
+# Redirect non-existing pages to 404
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404 [L]
+
+# Removing Extensions
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+

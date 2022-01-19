@@ -1,0 +1,25 @@
+# Use Alpine Image
+image: 
+    alpine:latest
+
+# Deploy to Gitlab Pages
+pages:
+    stage:
+        deploy
+    script:
+        - echo "Moving Artifacts to .public..."
+        - mkdir .public
+        - mv -v ./.htaccess ./* ./.public/
+        - echo "Renaming .public to public..."
+        - mv -vf ./.public ./public
+        - echo "Process Completed.."
+        - sleep 1
+        - echo "Deploying Gitlab Pages"
+        - echo
+    artifacts:
+        paths:
+            - public
+    rules:
+        - if:
+            $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
