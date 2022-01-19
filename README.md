@@ -7,7 +7,7 @@ Ducky Script Converter README
     <h3><b>Ducky Script Converter</b>
     </h3>
     <br/>
-    <a href="https://tahmidrayat.gitlab.io/ducky" target="_blank">
+    <a href="https://htr-tech.github.io/ducky" target="_blank">
       <img src="assets/click.svg" alt="Live version"/>
     </a>
 </div>
